@@ -2,11 +2,33 @@
 <html>
 <head>
   <title>Soundboard</title>
+  <style>
+    /* Style for gradient buttons */
+    .gradient-button {
+      background-color: #4CAF50; /* Green */
+      background-image: linear-gradient(to bottom, #4CAF50, #45a049);
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    /* Hover effect */
+    .gradient-button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
-  <button onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/metal%20pipe.mp3')">metal pipe</button>
-  <button onclick="playSound('https://drive.google.com/file/d/1OyZlcKQWV-r-tdbsfFNnO4q4mIjntjDE.mp3')">illuminatti</button>
-  <button onclick="playSound('https://drive.google.com/file/d/17LWYoHLyMRykltlphbVfNhL6YBQdF.mp3')">sus</button>
+  <button class="gradient-button" onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/metal%20pipe.mp3')">metal pipe</button>
+  <button class="gradient-button" onclick="playSound('https://drive.google.com/file/d/1OyZlcKQWV-r-tdbsfFNnO4q4mIjntjDE.mp3')">illuminatti</button>
+  <button class="gradient-button" onclick="playSound('https://drive.google.com/file/d/17LWYoHLyMRykltlphbVfNhL6YBQdF.mp3')">sus</button>
 
   <script>
     function playSound(soundUrl) {
@@ -15,5 +37,4 @@
     }
   </script>
 </body>
-</html> 
-<h6>thanks chatgpt my pookie</h6>
+</html>
