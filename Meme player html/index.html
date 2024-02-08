@@ -36,7 +36,6 @@
   <button class="gradient-button" onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/aysat.mp3')">AYSAT</button>
   <script>
   <script>
-    var isPlaying = false;
 
     function playSound(soundUrl) {
       if (!isPlaying) {
@@ -44,7 +43,6 @@
         var audio = new Audio(soundUrl);
         audio.play();
         audio.onended = function() {
-          isPlaying = false;
         };
       }
     }
