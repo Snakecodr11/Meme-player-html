@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html>
-</head>
-<style type ="text/css">
-nav#nav1 {margin-top: 24px;}
-nav#nav1 > a{
-   background: #E34a4a;
-  color:#4ae39d
-;
-  padding:10px;
-  text-decoration:none;
-  border-radius:5
-  font-family: "Arial Black", Gadget, sans serrif;
-}
-Nav#nav1 > a:hover{ background: #Cf1a1a; }
-Nav#nav1 > a:active{ background: #132d9d; }
-</style>
-<script>
-
-</script>
 <head>
-  <body style="background-color: blue">
-  <button style="background-color: green;" onclick="playSound()">Metal button</button>
+  <title>Soundboard</title>
+  <style>
+    /* Style for gradient buttons */
+    .gradient-button {
+      background-color: #4CAF50; /* Green */
+      background-image: linear-gradient(to bottom, #4CAF50, #45a049);
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    /* Hover effect */
+    .gradient-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <button class="gradient-button" onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/metal%20pipe.mp3')">metal pipe</button>
+  <button class="gradient-button" onclick="playSound('https://drive.google.com/file/d/1OyZlcKQWV-r-tdbsfFNnO4q4mIjntjDE.mp3')">illuminatti</button>
+  <button class="gradient-button" onclick="playSound('https://drive.google.com/file/d/17LWYoHLyMRykltlphbVfNhL6YBQdF.mp3')">sus</button>
 
   <script>
-    function playSound() {
-      var audio = new Audio('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/metal%20pipe.mp3');
-      metal.play();
+    function playSound(soundUrl) {
+      var audio = new Audio(soundUrl);
+      audio.play();
     }
   </script>
-</head>
-  </body>
-   <nav id=1>
-      <a onclick = metal.play>
+</body>
 </html>
-
