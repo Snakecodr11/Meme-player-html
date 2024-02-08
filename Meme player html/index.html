@@ -35,11 +35,8 @@
   <button class="gradient-button" onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/t.mp3')">Thomas</button>
   <button class="gradient-button" onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/aysat.mp3')">AYSAT</button>
   <script>
-  <script>
 
     function playSound(soundUrl) {
-      if (!isPlaying) {
-        isPlaying = true;
         var audio = new Audio(soundUrl);
         audio.play();
         audio.onended = function() {
