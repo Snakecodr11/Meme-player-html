@@ -16,23 +16,18 @@ Nav#nav1 > a:hover{ background: #Cf1a1a; }
 Nav#nav1 > a:active{ background: #132d9d; }
 </style>
 <script>
-var metal = new audio ();
-metal.src = "metal pipe.mp3";
-   var auh = new audio ();
-auh.src = "auh.mp3";
-   var t = new audio ();
-t.src = "t.mp3";
-   var I = new audio ();
-I.src = "I.mp3";
+
 </script>
 <head>
   <body>
-    <nav id="nav1">
-<a onclick="metal.play()">Metal Pipe</a>
-<a onclick="">auhhhh</a>
-<a onclick="">tomas the tank</a>
-<a onclick="">Iluminatti</a>
-    <nav>
-  </body>
+  <button onclick="playSound()">Metal button</button>
+
+  <script>
+    function playSound() {
+      var audio = new Audio('https://raw.githubusercontent.com/myRepo/master/vendor/assets/music/metal pipe.mp3');
+      audio.play();
+    }
+  </script>
+</body>
 </html>
 
