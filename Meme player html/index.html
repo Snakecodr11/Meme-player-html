@@ -8,7 +8,7 @@
       background-color: black; /* Set background color to black */
     }
     .gradient-button {
-      background-color: #FF0000; /* Red */
+      background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
       border: none;
       color: white;
       padding: 15px 32px;
@@ -21,9 +21,9 @@
       border-radius: 8px;
       transition: background-color 0.3s;
     }
-    /* Hover effect */
+    /* Hover effect for gradient buttons */
     .gradient-button:hover {
-      background-color: #B30000; /* Darker red on hover */
+      background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     }
   </style>
 </head>
@@ -34,11 +34,17 @@
   <button class="gradient-button" onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/auh.mp3')">auhhhh</button>
   <button class="gradient-button" onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/t.mp3')">Thomas</button>
   <button class="gradient-button" onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/aysat.mp3')">Are you sure about that</button>
-  <button class="gradient-button" onclick= stopSound>STOP</button>
+  <button class="gradient-button" onclick="stopSound()">STOP</button>
   <script>
     function playSound(soundUrl) {
       var audio = new Audio(soundUrl);
       audio.play();
+    }
+    function stopSound() {
+      var sounds = document.getElementsByTagName('audio');
+      for(var i = 0; i < sounds.length; i++) {
+        sounds[i].pause();
+      }
     }
   </script>
 </body>
