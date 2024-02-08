@@ -8,7 +8,7 @@
       background-color: black; /* Set background color to black */
     }
     .gradient-button {
-      background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+      background-color: violet;
       border: none;
       color: white;
       padding: 15px 32px;
@@ -23,7 +23,18 @@
     }
     /* Hover effect for gradient buttons */
     .gradient-button:hover {
-      background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+      animation: rainbow 2s infinite;
+    }
+    
+    @keyframes rainbow {
+      0% { background-color: violet; }
+      14% { background-color: indigo; }
+      28% { background-color: blue; }
+      42% { background-color: green; }
+      56% { background-color: yellow; }
+      70% { background-color: orange; }
+      84% { background-color: red; }
+      100% { background-color: violet; }
     }
   </style>
 </head>
