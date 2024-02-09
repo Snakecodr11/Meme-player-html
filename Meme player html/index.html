@@ -1,66 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>totally not a meme soundboard</title>
-  <style>
-    /* Style for gradient buttons */
-    body {
-      background-color: black; /* Set background color to black */
-    }
-    .gradient-button {
-      background-color: violet;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-    /* Hover effect for gradient buttons */
-    .gradient-button:hover {
-      animation: rainbow 2s infinite;
-    }
-    
-    @keyframes rainbow {
-      0% { background-color: violet; }
-      14% { background-color: indigo; }
-      28% { background-color: blue; }
-      42% { background-color: green; }
-      56% { background-color: yellow; }
-      70% { background-color: orange; }
-      84% { background-color: red; }
-      100% { background-color: violet; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Totally not a meme soundboard</title>
+<style>
+  /* Define keyframes for rainbow animation */
+  @keyframes rainbow {
+    0% { color: red; }
+    16% { color: orange; }
+    33% { color: yellow; }
+    50% { color: green; }
+    66% { color: blue; }
+    83% { color: indigo; }
+    100% { color: violet; }
+  }
+  
+  /* Apply rainbow animation to buttons */
+  .rainbow-button {
+    animation: rainbow 5s linear infinite;
+  }
+  
+  /* Style for buttons */
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Additional styling for each button */
+  .button1 {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  .button2 {
+    background-color: #008CBA; /* Blue */
+    color: white;
+  }
+  
+  .button3 {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+</style>
 </head>
 <body>
-  <button class="gradient-button" onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/metal%20pipe.mp3')">metal pipe</button>
-  <button class="gradient-button" onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/I.mp3')">illuminatti</button>
-  <button class="gradient-button" onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/sus.mp3')">sus</button>
-  <button class="gradient-button" onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/auh.mp3')">auhhhh</button>
-  <button class="gradient-button" onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/t.mp3')">Thomas</button>
-  <button class="gradient-button" onclick="playSound('https://github.com/Snakecodr11/Meme-player-html/raw/main/Meme%20player%20html/aysat.mp3')">Are you sure about that</button>
-  <button class="gradient-button" onclick="stopSound()">STOP</button>
-  <button class="gradient-button" onclick="window.open('https://github.com/Snakecodr11')">Snake's Github</button>
-  <button class="gradient-button" onclick="window.open('https://github.com/nexusrealityz')">Nexus's Github</button>
-  <script>
-    function playSound(soundUrl) {
-      var audio = new Audio(soundUrl);
-      audio.play();
-    }
-    function stopSound() {
-      var sounds = document.getElementsByTagName('audio');
-      for(var i = 0; i < sounds.length; i++) {
-        sounds[i].pause();
-      }
-    }
-  </script>
+
+<!-- HTML for buttons -->
+<button class="button rainbow-button button1">Button 1</button>
+<button class="button rainbow-button button2">Button 2</button>
+<button class="button rainbow-button button3">Button 3</button>
+
 </body>
 </html>
-<h6 style="color: white;">thanks chatgpt my pookie :3</h6>
-<h7 style="color: red;">work in progress</h7>
