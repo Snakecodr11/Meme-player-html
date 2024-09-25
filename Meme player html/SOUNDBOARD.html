@@ -42,8 +42,24 @@
       84% { color: blue; }
       100% { color: purple; }
     }
+    @keyframes snakecustomfade {
+      0% { color: green; }
+      14% { color: blue; }
+      28% { color: green; }
+      42% { color: blue; }
+      56% { color: green; }
+      70% { color: blue; }
+      84% { color: green; }
+      100% { color: blue; }
+    }
     h3 {
       animation: nexuscustomfade 10s linear infinite
+    }
+    nexuscredits {
+      animation: nexuscustomfade 10s linear infinite
+    }
+    snakecredits {
+      animation: snakecustomfade 10s linear infinite
     }
   </style>
 </head>
@@ -102,8 +118,8 @@
   <button class="gradient-button" onclick="disguiseTab()">Disguise Tab</button>
   <button class="gradient-button" onclick="resetDisguise()">Reset Disguise</button>
   <h1>Credits</h1>
-  <h2>Nexus - Collaborator, Page Manager</h2>
-  <h2>Snakecodr11 - Creator, Sound Manager</h2>
+  <h2 class="nexuscredits">Nexus - Collaborator, Page Manager</h2>
+  <h2 class="snakecredits">Snakecodr11 - Creator, Sound Manager</h2>
   <script>
     function playSound(soundUrl) {
       var audio = new Audio(soundUrl);
