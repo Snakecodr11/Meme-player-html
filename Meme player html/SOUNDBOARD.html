@@ -118,8 +118,8 @@
   <button class="gradient-button" onclick="disguiseTab()">Disguise Tab</button>
   <button class="gradient-button" onclick="resetDisguise()">Reset Disguise</button>
   <h1>Credits</h1>
-  <h2 class="nexuscredits">Nexus - Collaborator, Page Manager</h2>
-  <h2 class="snakecredits">Snakecodr11 - Creator, Sound Manager</h2>
+  <h2 class="nexuscredits" onclick="redirectPage('https://www.github.com/nexusrealityz/')">Nexus - Collaborator, Page Manager</h2>
+  <h2 class="snakecredits" onclick="redirectPage('https://www.github.com/Snakecodr11/')">Snakecodr11 - Creator, Sound Manager</h2>
   <script>
     function playSound(soundUrl) {
       var audio = new Audio(soundUrl);
@@ -137,9 +137,13 @@
     function resetDisguise() {
       document.title = "totally not a meme soundboard";
     }
+    function redirectPage(page) {
+      window.location.href = page;
+    } // didnt use chatgpt for this one HOORAY!!
   </script>
 </body>
 </html>
 <h3 style="color: white;">- CHANGELOG -</h3>
-<h3 style="color: white;">nexus: first update in months! added credits, stop sounds button (again), and finally got his OG github account back. 9/25/24</h3>
-<h3 style="color: white;">nexus: didnt publish as a site yet, gonna ask Snakecodr to do that :P FORGOT TO MENTION I TOUCHED UP THE CHANGELOG DESIGN, TOO</h3>
+<h3 style="color: white;">nexus: first update in months! added credits, stop sounds button (again), and finally got my OG github account back. {9/25/24}</h3>
+<h3 style="color: white;">nexus: didnt publish as a site yet, gonna ask Snakecodr to do that :P FORGOT TO MENTION I TOUCHED UP THE CHANGELOG DESIGN, TOO. {9/25/24}</h3>
+<h3 style="color: white;">nexus: fixed credits gradient text, fixed changelog text (forgot the background was black so i changed it), and edited the README for the github page. {9/25/24}</h3>
